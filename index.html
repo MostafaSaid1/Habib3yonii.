@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Valentine Link</title>
+</head>
+
+<body style="text-align:center;font-family:arial">
+
+<h2>❤️ Valentine Link Generator</h2>
+
+<input id="name" placeholder="اكتب اسمك">
+<br><br>
+
+<button onclick="gen()">Generate</button>
+
+<p id="link"></p>
+
+<script>
+function gen(){
+let name=document.getElementById("name").value;
+let url=location.origin+"?to="+name;
+document.getElementById("link").innerHTML=`لينكك:<br><a href="${url}">${url}</a>`;
+}
+</script>
+
+<hr>
+
+<textarea id="msg" placeholder="اكتب رسالتك"></textarea><br>
+<button onclick="send()">Send</button>
+
+<script>
+function send(){
+alert("تم إرسال الرسالة ❤️");
+}
+</script>
+
+</body>
+</html>
