@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Valentine Link</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
-<body style="text-align:center;font-family:arial">
+<body>
 
-<h2>❤️ Valentine Link Generator</h2>
+<audio autoplay loop>
+<source src="song.mp3">
+</audio>
 
-<input id="name" placeholder="اكتب اسمك">
-<br><br>
+<h1>❤️ Valentine Confessions</h1>
 
-<button onclick="gen()">Generate</button>
+<img src="img1.jpg">
+<img src="img2.jpg">
 
-<p id="link"></p>
-
-<script>
-function gen(){
-let name=document.getElementById("name").value;
-let url=location.origin+"?to="+name;
-document.getElementById("link").innerHTML=`لينكك:<br><a href="${url}">${url}</a>`;
-}
-</script>
-
-<hr>
-
-<textarea id="msg" placeholder="اكتب رسالتك"></textarea><br>
-<button onclick="send()">Send</button>
-
-<script>
-function send(){
-alert("تم إرسال الرسالة ❤️");
-}
-</script>
+<textarea placeholder="اكتب رسالتك"></textarea>
+<br>
+<button onclick="alert('تم الإرسال ❤️')">Send</button>
 
 </body>
 </html>
